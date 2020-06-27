@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 this is test for push to git hub
+=======
+this is test for push to git hub
+this is test for clone
+>>>>>>> ce035497875f2bb4756457e4b2a93ab0050db2b9
