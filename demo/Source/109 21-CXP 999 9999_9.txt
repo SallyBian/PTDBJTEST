@@ -1,0 +1,2050 @@
+R8A42 (EZHAXIX, 2020-05-22) 
+
+Add branch test
+
+R8A41 (EZHAXIX, 2020-05-22) 
+Demo test.
+
+=============================================================
+R8A40 (ekexigu, 2020-05-22) 
+Demo test.
+
+=============================================================
+
+R8A39 (ekexigu, 2020-05-22) 
+Demo test.
+
+=============================================================
+
+
+R1A (eyaogan, 2019-06-28) 
+Release version, equal to R1A08.
+
+=============================================================
+
+R8A08 (ECSSASS, 2019-06-14) 
+Ericsson.Rcm.TypeLibrary.dll		R8A06	Task 17636	Added overload method SendCommandAndReceiveString in interface ITestInterface which takes a receive termination string as parameter.
+
+Ericsson.Rcm.PM.RohdeSchwarzNrq.dll	R1C01	Task 17700	Method ReadIQDataCore in ModulationMeasurement is corrected to save the IQ complex value in each element of the result vector.
+
+=============================================================
+
+R8A07 (ECSGOWA, 2019-06-12) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dll	R5A01	Task 17544	Added Clear of Error Que in ResetCore in RFSwitchBase.cs for Whitebox
+
+=============================================================
+
+R8A06 (ECSNSTR, 2019-06-5) 
+Ericsson.Rcm.RuMa			R7A01	Task 17246	ITXData.SetIQDataFile update flow so that unnecessary reconfigurations of carriers will not occur.
+
+=============================================================
+
+R8A05 (ecshess, 2019-05-24) 
+Ericsson.Rcm.TypeLibrary.dll		R8A02	Task 17515	Added methods for PeakHoldCurrent in IACCurrentMeasurement and IDCCurrentMeasurement.
+Ericsson.Rcm.ACPsu.Keysight68xx.dll	R3B02	Task 17531	Added methods for Peak hold current.
+
+=============================================================
+
+R8A04 (ecshess, 2019-05-16) 
+Ericsson.Rcm.ACPsu.Keysight68xx.dll	R3B01	Task 17418	Changed OutputEnabledCore to have statecache(for coupling mode) to ask instrument when statecache has been cleared.
+
+=============================================================
+
+R8A03 (ecsljli, 2019-05-14) 
+Ericsson.Rcm.TypeLibrary.dll		R8A01 	Task 17392	Add new interface IWaveformGeneration
+
+=============================================================
+
+R8A02 (ecshess, 2019-05-9) 
+Ericsson.Rcm.Tib2.dll			R3D01	Task 17309	BackEndCommunication.Clear() added to Switch.cs to make sure Tib comport buffer is cleared after every Mux channel switch is done.
+
+=============================================================
+
+R8A01 (ecstws, 2019-05-7) 
+First version of R8A development branch, identical to R7A.
+
+=============================================================
+
+R7A (ecstws, 2019-05-7) 
+Release version, identical to R7A17.
+
+=============================================================
+
+R7A17 (ECSSASS, 2019-05-3) 
+Ericsson.Rcm.NA.KeysightPna.dll		R3A04	Task 17348	A new method GetXAxisValuesAsReal64 is added to get correct frequency values in FetchCore and FetchComplexCore(int[] ports).
+
+=============================================================
+
+R7A16 (ecshess, 2019-04-29) 
+Revert Ericsson.Rcm.SA.KeysightMxa.dll	R3A01 to previous version R2A02. R3A01(Task 17165) will be released in R8A instead along with needed helper changes. 
+
+=============================================================
+
+R7A15 (estrgus, 2019-04-26) 
+IviConfigurationStore.xml		R8A02	Task 17318	Updated initial settings for added spectrumanalyzers.
+
+=============================================================
+
+R7A14 (ECSSASS, 2019-04-25) 
+Ericsson.Rcm.NA.KeysightPna.dll		R3A03	Task 17313	Binary transfer format is changed from Real 64 to Real 32 and state cache is cleared when recal state is called.
+
+=============================================================
+
+R7A13 (ECSSASS, 2019-04-23) 
+Ericsson.Rcm.TypeLibrary.dll		R7A03	Task 17306	Replaced IFileStorage with IRcmFile and IRcmDirectory.
+Ericsson.Rcm.NA.KeysightPna.dll		R3A02	Task 17307	Replaced IFileStorage with IRcmFile and IRcmDirectory.
+
+=============================================================
+
+R7A11 (ecsljli, 2019-04-16) 
+Ericsson.Rcm.Psu.Keysight69xx.dll	R3A01	Task 17104	Implemented the possibility of have several PSU interconnected to get more output power.
+
+=============================================================
+
+R7A10 (ecshess, 2019-04-15) 
+Ericsson.Rcm.SA.KeysightMxa.dll	R3A01	Task 17165	Removed the overridden centerFrequencyCore.
+					Task 17111	Added support for overload ReadIQData method with a new parameter Action for custom trigger function.
+
+=============================================================
+
+R7A09 (ECSSASS, 2019-04-12) 
+Ericsson.Rcm.Pos.MaturoNcd.dll		R1A01	Task 14872	First revision created.
+
+Ericsson.Rcm.Gui.exe			R2A01	Task 17130	CompensationManager definitions are moved.
+								The driver is recompiled with Ericsson.Rcm.Core as reference instead of Ericsson.SC.TypeLibrary.
+
+=============================================================
+
+R7A08 (estrgus, 2019-04-11) 
+IviConfigurationStore.xml		R8A01	Task 17115	Updated IP addresses and added  new addresses for master/slave psu and turntable.
+Ericsson.Rcm.RfSwitch.RFSC.dll		R2A03	Task 16676	Alteration to previous fix on reset, now sends rst to switchbox aswell.
+
+=============================================================
+
+R7A07 (ECSSASS, 2019-04-11) 
+Ericsson.Rcm.TypeLibrary.dll		R7A02	Task 17114	Interfaces INetworkAnalysisPortExtension and INetworkAnalysisAutoPortExtension are added.
+Ericsson.Rcm.TypeLibrary.dll		R7A02	Task 17063	Interfaces INetworkAnalysisDeEmbedding, IFileTransfer and IFileStorage are added. The method SaveAsSnpFile in INetworkAnalysisTrace is added.
+Ericsson.Rcm.TypeLibrary.dll		R7A02	Task 17110	Overloaded method for ReadIQDataCore is added in interface IModulationMeasurementTrace which takes an Action as parameter.
+
+Ericsson.Rcm.NA.KeysightPna.dll		R3A01	Task 13214	Support for interfaces INetworkAnalysisPortExtension and INetworkAnalysisAutoPortExtension are added.
+Ericsson.Rcm.NA.KeysightPna.dll		R3A01	Task 17064	Support for interfaces INetworkAnalysisDeEmbedding, IFileTransfer and IFileStorage are added. The method SaveAsSnpFile in INetworkAnalysisTrace is added.
+
+=============================================================
+
+R7A06 (ecshess, 2019-04-11) 
+Ericsson.Rcm.SG.RohdeSchwarz.dll	R1C01	Task 16112	Added 10Mhz reference oscillator settings for SGT100 in Reset.
+Ericsson.Rcm.Tib2.dll			R3C01	Task 17027	Updated FtdiSpi.cs to support larger memmory.
+
+=============================================================
+
+R7A05 (ECSGOWA, 2019-03-27) 
+Ericsson.Rcm.Load.KeysightN33xx.dll	R2A01	Task 16620	Changed to be able to use two loads at the same time.
+
+=============================================================
+
+R7A04 (ecshess, 2019-03-14) 
+Ericsson.Rcm.RuMa.dll			R6A01	Task 16593	Set trigger pulse width to 100 when setting trigger source.
+
+=============================================================
+
+R7A03 (ECSSASS, 2019-03-7) 
+Ericsson.Rcm.TypeLibrary.dll		R7A01	Task 14886	Interface IMachinePositionable is added.
+
+=============================================================
+
+R7A02 (estrgus, 2019-03-7) 
+Ericsson.Rcm.RfSwitch.RFSC.dll		R2A01	Task 15016	Implemented IFiletransfer					
+
+=============================================================
+
+R7A01 (ecstws, 2019-02-28) 
+New dev branch, identical to R6A.
+
+=============================================================
+
+R6A (ecstws, 2019-02-28) 
+Release version, equal to R6A20.
+
+=============================================================
+
+R6A20 (estrgus, 2019-02-25) 
+Ericsson.Rcm.RfSwitch.RFSC.dll		R1A02	Task 16281	Added send of 'tr' command on connect and throw exception if no response
+								Added handling of capitalized letters
+								Added removing comments on reading json configuration
+								Added override on options with an empty list
+								Returning firmwarestring as it comes from RFSC
+
+=============================================================
+
+R6A19 (efrenik, 2019-02-22) 
+Ericsson.Rcm.Dmm.Keysight344xx.dll      R3A01   Task 16260      Modify Resistance measurement in Ericsson.Rcm.Dmm.Keysight344xx
+
+=============================================================
+
+R6A18 (ecstws, 2019-02-21) 
+Ericsson.Rcm.RuMa.dll			R5A07	Task 16264	RuMaster driver don't clear carriers when cdl-file is changed.
+
+=============================================================
+
+R6A17 (ecshess, 2019-02-21) 
+Ericsson.Rcm.RuMa.dll			R5A06	Task 16246	More corrections needed in SetupCarrier for FrameSyncMode.
+
+=============================================================
+
+R6A16 (ecshess, 2019-02-20) 
+Ericsson.Rcm.RuMa.dll			R5A05	Task 16246	Corrected SetupCarrier with FrameSyncMode parameter.
+
+=============================================================
+
+R6A15 (ecshess, 2019-02-18) 
+Ericsson.Rcm.RuMa.dll			R5A03	Task 16222	Update driver to get and use the InitialSetting for Reference source.
+
+=============================================================
+
+R6A14 (ecshess, 2019-02-13) 
+Ericsson.Rcm.RuMa.dll			R5A03	Task 15255	Added overloaded SetCarrierFSInfo that takes addresss as parameter. With correction.
+
+=============================================================
+
+R6A13 (estrgus, 2019-02-1) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dll	R4A01	Task 16138	Changed CommunicationInitialize() in RFSwitchRFSC to not throw wrong exception
+
+=============================================================
+
+R6A12 (ECSSASS, 2019-02-1) 
+Ericsson.Rcm.TypeLibrary.dll		R6A06	Task 14886	Interface IPositionable + class PositionerBase are added.
+
+Ericsson.Rcm.PM.RohdeSchwarzNrq.dll	R1B01	Task 16090	Method ReadIQDataCore is corrected to handle I1,Q1,I2,Q2... instead of I1,I2...Q1,Q2.
+
+Ericsson.Rcm.Etsw.dll			R5A01	Task 14875	Remove static variables to support multi dut in EtswSshCommunication class which affect Open and Close methods.
+
+=============================================================
+
+R6A11 (estrgus, 2019-01-31) 
+Ericsson.Rcm.RfSwitch.RFSC.dll	 	R1A01	Task 15016	New driver for RFSC switchbox with new firmware
+IviConfigurationStore.xml		R7A04	Task 16095	Added more SwitchpathRF configurations
+Ericsson.Rcm.TypeLibrary.dll		R6A04	Task 15256	Reverted from version R6A05 due to problems found.
+Ericsson.Rcm.RuMa.dll			R5A01	Task 15255	Reverted from version R5A01 due to problems found.
+
+
+
+=============================================================
+
+R6A10 (ecshess, 2019-01-28) 
+Ericsson.Rcm.SG.KeysightMXG.dll		R1D02	Task 16097	Added Model N5182B in GetCacheTriggerMode().
+
+=============================================================
+
+R6A09 (ecshess, 2019-01-25) 
+Ericsson.Rcm.TypeLibrary.dll	R6A05	Task 15256	Added overloaded method SetCarrierFSInfo that also takes address as parameter.
+Ericsson.Rcm.RuMa.dll		R5A02	Task 15255	Added overloaded method SetCarrierFSInfo that also takes address as parameter.
+
+=============================================================
+
+R6A08 (efrenik, 2019-01-24) 
+Ericsson.Rcm.Dmm.Keysight34970A.dll     R3A01   Task 16091      Every call to measurement read caused mux channels (if present) to be reset, causing a rescan of measuring ranges. Costs a little time and can result in "overload" measurement values on resistance measurements with a high capacitance load.
+
+=============================================================
+
+R6A07 (ecshess, 2019-01-21) 
+Ericsson.Rcm.TypeLibrary.dll		R6A04	Task 15245	Add InternalChannelCorrectionEnabled property in RFSignalGenerationIQ interface.
+Ericsson.Rcm.SG.KeysightMXG.dll		R1D01	Task 15019	Added implementation for InternalChannelCorrectionEnabled property.
+Ericsson.Rcm.SG.RohdeSchwarz.dll	R1B01	Task 15246	Added dummy implementation for InternalChannelCorrectionEnabled property.
+
+=============================================================
+
+R6A06 (ecshess, 2019-01-14) 
+Ericsson.Rcm.Tib2.dll			R3B02	Task 14826	Bugfix on previous change, statics removed to be able to have 2 Tib's in a test.
+
+=============================================================
+
+R6A05 (ecshess, 2019-01-7) 
+Ericsson.Rcm.Tib2.dll			R3B01	Task 14826	Statics removed to be able to have 2 Tib's in a test.
+
+=============================================================
+
+R6A04 (ecshess, 2018-12-19) 
+Ericsson.Rcm.TypeLibrary.dll		R6A03	Task 14808	Added possebility to specify different cpc files and merge from R5A branch.
+Ericsson.Rcm.RuMa.dll			R5A01	Task 14641	Reworked SetupCarriers in RX and added support to set cpc file separatly and merge from R4A branch.
+
+=============================================================
+
+R6A03 (ECSNSTR, 2018-12-7) 
+Merged updates from R5A59
+
+=============================================================
+
+R6A02 (ECSNSTR, 2018-12-6) 
+ConfigurationStore CXP9040665_1		R7A01	Task 15018	Enable logging for DriverSessions RFPowerMeasurementNrpS and RFPowerMeasurementNrpZ.
+
+=============================================================
+
+R6A01 (ecshess, 2018-11-27) 
+New dev branch. Identical to R5A57.
+
+=============================================================
+
+R5A (ecshess, 2018-12-20) 
+New release, same as R5A59
+
+=============================================================
+
+R5A59 (ECSSASS, 2018-12-4) 
+Ericsson.Rcm.SA.RohdeSchwarz.dll	R1B03	Task 14985	PreConditions to change instrument mode to spectrum analyzer is added for Start, Stop, MicrowavePreselectorBypass and GateState.
+
+=============================================================
+
+R5A58 (ecshess, 2018-12-3) 
+Ericsson.Rcm.TypeLibrary.dll		R5A12	Task 14953	New overloaded method CarrierConfiguration with enum for FrameSyncMode and Technology in RuMaster.
+Ericsson.Rcm.RuMa.dll			R4A04	Task 14952	Added support for FrameSyncMode and Technology to be set in CarrierConfiguration.
+
+=============================================================
+
+R5A57 (ecssass, 2018-11-27) 
+Ericsson.Rcm.SA.RohdeSchwarz.dll	R1B02	Task 14639	Add possibility to set frequencies over the instrument normal range.
+
+=============================================================
+
+R5A56 (ecstws, 2018-11-26) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dllR3A09	Task 14910	RfSwitch driver, support comments in json configuration file.
+
+=============================================================
+
+R5A55 (ECSHESS, 2018-11-22) 
+OBS!!! This Driver pack will require new RadioResource with new SC.InstrumentHelper and new TM.TestStationCalibration.
+The reason is that we have removed an unwanted dependency between the resources. 
+Ericsson.Rcm.Core.dll			R2D06	Task 14877	Interfaces ICompensationManager and ICompensationDataSection are moved from Ericsson.SC.TypeLibrary.
+Ericsson.SC.CompensationManager.dll	R2A02	Task 14878	CompensationManager definitions in Ericsson.Rcm.Core are used instead of Ericsson.SC.TypeLibrary.
+
+=============================================================
+
+R5A54 (ecstws, 2018-11-22) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dllR3A07	Task 14844	Support ranges in switchbox config file (driver). In some cases the switches and paths key words is in pascal case.In some cases the switches and paths key words is in pascal case.
+
+=============================================================
+
+R5A53 (ecstws, 2018-11-20) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dllR3A07	Task 14844	Support ranges in switchbox config file (driver).
+
+=============================================================
+
+R5A52 (ECSHESS, 2018-11-16) 
+Ericsson.Rcm.CWSG.RohdeSchwarz.dll	R2A03	Task 13439	Implemented Fast Internal adjustment in protection mode for SMA100B.
+Ericsson.Rcm.SA.KeysightMxa.dll		R2A02	Task 14622	Added support for MicrowavePreselectorBypass in SpectrumMeasurement and bug fix to return wanted number of samples in ReadIQData.
+Ericsson.Rcm.ACPsu.Keysight68xx.dll	R3A02	Task 14584	OutputEnable don't throw exception when set to false even if it is not in correct coupling mode.
+
+=============================================================
+
+R5A51 (ECSSASS, 2018-11-15) 
+Ericsson.Rcm.PM.RohdeSchwarzNrpxxS.dll	R2A03	Task 14813	IRFPowerMeasurementContinuousAverage and IRFPowerMeasurementAverage interfaces are added.
+
+Ericsson.Rcm.PM.RohdeSchwarzNrq.dll	R1A02	Task 14814	Method IsExternalReferenceConnected in ModulationMeasurement is corrected.
+
+Ericsson.Rcm.SA.RohdeSchwarzFps.dll	R1A02	Task 14621	Property MicrowavePreselectorBypass in interface ISpectrumMeasurementLevel is added.
+
+=============================================================
+
+R5A50 (ECSERVA, 2018-11-14) 
+Ericsson.Rcm.NA.KeysightEna.dll		R2A02	Task 14820	EcalCountCore() and GetEcalModuleInfoCore() added.
+
+=============================================================
+
+R5A49 (ECSERVA, 2018-11-14) 
+Ericsson.Rcm.Amp.RohdeSchwarz.dll	R2A01	Task 14819	Make ResetCore() generic to work with single amplifier.
+
+=============================================================
+
+R5A48 (ECSSASS, 2018-11-5) 
+Ericsson.Rcm.SA.RohdeSchwarz.dll	R1B01	Task 14621	Added support for MicrowavePreselectorBypass in SpectrumMeasurement.
+
+=============================================================
+
+R5A47 (ecshess, 2018-11-5) 
+Ericsson.Rcm.TypeLibrary.dll		R5A11	Task 14610	Added support for MicrowavePreselectorBypass in ISpectrumAnalyser.
+						Task 14611	Added support for Continuous average fast functions in IRFPowerMeasurement. 
+
+=============================================================
+
+R5A46 (ecstws, 2018-11-2) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dll	R3A06	Task 14602	RfSwitch driver communication timeout needs to be increased.
+
+=============================================================
+
+R5A45 (estrgus, 2018-10-30) 
+Ericsson.Rcm.Psu.Keysight67xx.dll	R1A02	Task 14583	Add instrument model N6701A in Psu.Keysigh67xx driver
+IviConfigurationStore.xml		R6A13	Task 14583	Add instrument model N6701A in IviConfigurationStore
+
+=============================================================
+
+R5A44 (ECSSASS, 2018-10-29) 
+Ericsson.SC.CompensationManager.dll	R2A01	Task 14052	Methods GetMaxInterpolationDistance added in CompensationDataSection.
+
+Ericsson.Rcm.Core.dll			R2D05	Task 13325	OpenCommunicationException is added.
+						Task 14053	TryGetClosestCompensatedFrequency is changed to use GetMaxInterpolationDistance in DriverBase.ICompensation.
+
+Ericsson.Rcm.PM.RohdeSchwarzNrq.dll	R1A01	Task 13516	First release.
+
+Ericsson.Rcm.SA.RohdeSchwarzFps.dll	R1A01	Task 14578	First release.
+
+=============================================================
+
+R5A43 (ecsjiol, 2018-10-25) 
+Ericsson.Rcm.BoardPowerManager.dll	R4A11 	Task 13584. Added method to check if more than 1 byte is received from BPM during Initialize.
+If so we will check all of them to see if last one is an ACK (0x79).
+
+=============================================================
+
+R5A42 (ecsjiol, 2018-10-19) 
+Ericsson.Rcm.TypeLibrary.dll		R5A09  Task 13716 Power On Reset to disable CPM to Boot during Bscan.
+Ericsson.Rcm.BoardPowerManager.dll	R4A10
+
+=============================================================
+
+R5A41 (ecsjiol, 2018-10-18) 
+Ericsson.Rcm.BoardPowerManager.dll	R4A09	Task 13584. Changed baudrate from 57600 to 115200 since communication towards Converters doesnt work with 57600..
+
+=============================================================
+
+R5A40 (ecsjiol, 2018-10-17) 
+Ericsson.Rcm.BoardPowerManager.dll	R4A08	Task 13584	Added debug printout of number of bytes received when waiting for ACK (0x79)
+
+=============================================================
+
+R5A39 (ecstill, 2018-10-17) 
+Ericsson.Rcm.TypeLibrary.dll		R5A08	Task 12923 	Added BpmPowerDomainControl to set BBM 1-5 in status: ON
+Ericsson.Rcm.BoardPowerManager		R4A07	Task 12923 	Added BpmPowerDomainControl to set BBM 1-5 in status: ON
+
+=============================================================
+
+R5A38 (ECSGOWA, 2018-10-16) 
+IviConfigurationStore.xml		R6A09	Task 12493	Bugfix for PSU2 Logical names for Keysight67xx.
+
+=============================================================
+
+R5A37 (estrgus, 2018-10-15) 
+Ericsson.Rcm.PowerDistribution.dll	R2A03			SetHardwareInfo, added extra arrayindex in split to remove old data from showing
+
+=============================================================
+
+R5A36 (ecshess, 2018-10-4) 
+Ericsson.Rcm.Psu.Keysight67xx.dll	R1A01	Task 12493	Merged and added driver to Raptor
+Ericsson.Rcm.ACPsu.Keysight68xx.dll	R3A01	Task 13537	Changed preConditionCoupling behavior and added QueryError and throw exception if coupling command fails.
+IviConfigurationStore.xml		R6A08	Task 12493	Added PSU2 Logical names for Keysight67xx.
+
+=============================================================
+
+R5A35 (ecsjiol, 2018-10-1) 
+Ericsson.Rcm.BoardPowerManager.dll	R4A05	Bugfix. Moved 100ms sleep to only be performed first time using Parity Even. (Now it was performed everytime we sent command to Master BPM)
+
+=============================================================
+
+R5A34 (ecsjiol, 2018-10-1) 
+Ericsson.Rcm.BoardPowerManager.dll	R4A04 	Bugfix. Added 100ms sleep after changing Parity from none to Even before using Uart.
+
+=============================================================
+
+R5A33 (ecsjiol, 2018-09-28) 
+Ericsson.Rcm.BoardPowerManager.dll	R4A03	Added printout of tx and rx during Initialize Master BPM in hex format.
+
+=============================================================
+
+R5A32 (ecshess, 2018-09-25) 
+Ericsson.Rcm.TypeLibrary.dll		R5A07	Task 13490	Added PortConfiguration method that takes parameter to enable or disable cpri port swap. 
+Ericsson.Rcm.RuMa.dll			R4A03	Task 13491	Added paramerer in PortConfiguration to be able to disable cpri port swap when running CaptureIQDataFast.
+
+=============================================================
+
+R5A31 (ecsjiol, 2018-09-25) 
+Ericsson.Rcm.BoardPowerManager.dll	R4A01	Task 2720	Added sleep before trying to Initialize Master BPM.
+
+=============================================================
+
+R5A30 (ECSLHED, 2018-09-21) 
+Ericsson.Rcm.Tib2.dll			R3A07	Task 12507	Added support for switch channels on mux 3 and 4 to be able to measure PAAM0-3 power.
+
+=============================================================
+
+R5A29 (ecshess, 2018-09-19) 
+Ericsson.Rcm.RuMa.dll			R4A02	Task 13448	Added delete of carriers in SetAxCContanerFormat and setLineRate since the _cerrierList is cleared. Also removed the creation of carriers up to maxNoCarriers so we now only create wanted carriers.
+
+=============================================================
+
+R5A28 (ecsgowa, 2018-09-11) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dll	R3A05	Task 13290	IDQuery and QueryError works now. NOTE: Update IVIConfigStore.xml to have IDQuery working. "Ericsson.Rcm.RFSwitch.KeysightL449xA" -> "Ericsson.Rcm.SwitchPath.KeysightL449xA".
+							Task 12983	CombinedSwitch added. RESET path will always set switches, regardless of statecash. 
+							Task 13094	IsConnectedCore is updated for Matrix switches.
+
+=============================================================
+
+R5A27 (ecshess, 2018-09-7) 
+Ericsson.Rcm.Core.dll			R2D02	Task 13325	OpenCommunicationException is added.
+Ericsson.Rcm.PowerDistribution.dll	R2A02	Task 13327	Changed open method to throw OpenCommunicationException when it fails.
+
+=============================================================
+
+R5A26 (ecsgowa, 2018-09-5) 
+Ericsson.Rcm.CWSG.RohdeSchwarz.dll	R2A02	Task 10665	Added support for new instrument SMA100B.
+
+=============================================================
+
+R5A25 (ECSSASS, 2018-08-31) 
+Ericsson.Rcm.TypeLibrary.dll		R5A06	Task 13288	New method WaitForString that takes a collection of strings is added in IDutCommunication.
+Ericsson.Rcm.Etsw.dll			R4A03	Task 13294	New method WaitForString that takes a collection of strings is added in IDutCommunication.
+
+
+=============================================================
+
+R5A24 (efrenik, 2018-08-31) 
+Ericsson.Rcm.SG.KeysightMXG.dll         R1C01   Task 13011      Add support for N5173B; added parameters in instrument information dictionary.
+
+=============================================================
+
+R5A23 (ecssass, 2018-08-24) 
+Ericsson.Rcm.PM.RohdeSchwarzNrpZxx.dll	R1C01	Task 12985	Reading power takes long time when no power is measured.
+Ericsson.Rcm.PM.RohdeSchwarzNrpxxS.dll	R2A02	Task 12985	Reading power takes long time when no power is measured.
+
+=============================================================
+
+R5A22 (ecstws, 2018-08-22) 
+IviConfigurationStore.xml		R6A07	Task 13117	Add 6488 switchbox support to configuration store.
+
+=============================================================
+
+R5A21 (ecshess, 2018-08-17) 
+Ericsson.Rcm.TypeLibrary.dll		R5A05	Task 13089	Added device MaintCtrl to Tif.ResetDevice enum.
+Ericsson.Rcm.Tib2.dll			R3A06	Task 13074	Added missing IReset methods.
+
+=============================================================
+
+R5A20 (ecstogu, 2018-08-16) 
+ConfigurationStore CXP9040665_1		R6A05	Task 13078	update LTN2142278_101.json for 6488 + add LTY1511850/6.json
+
+=============================================================
+
+R5A19 (ecstogu, 2018-08-16) 
+ConfigurationStore CXP9040665_1		R6A05	Task 13078	update LTN2142278_101.json for 6488 + add LTY1511850/6.json
+
+=============================================================
+
+R5A18 (ecstogu, 2018-08-15) 
+ConfigurationStore CXP9040665_1		R6A04	Task 13078	update LTN2142267_101.json for 6488 RBT.
+
+=============================================================
+
+R5A17 (ecsjiol, 2018-08-10) 
+Ericsson.Rcm.Tib2.dll			R3A05	Task 13016	Added longer Timeout. Added Reset of memory before writing.
+
+=============================================================
+
+R5A16 (ecsjiol, 2018-08-8) 
+Ericsson.Rcm.Tib2.dll			R3A04	Task 13016	Recompiled
+
+=============================================================
+
+R5A15 (ecshess, 2018-08-7) 
+Ericsson.Rcm.Tib2.dll		R3A03	Task 13016	Bulk Erase is changed to run command C4 instead of C7 if memory size, read from device id, is 1Gb.
+
+=============================================================
+
+R5A14 (ecssass, 2018-07-6) 
+Ericsson.Rcm.TypeLibrary.dll		R5A04	Task 12732	Interface ITestInterface is added.
+
+=============================================================
+
+R5A13 (ecshess, 2018-06-28) 
+Ericsson.Rcm.RuMa.dll			R4A01	Task 11006	Updated ExtractCarrierSamplesCore to handle different AxC container formats
+
+=============================================================
+
+R5A12 (ecsjiol, 2018-06-19) 
+Ericsson.Rcm.TypeLibrary.dll		R5A03	Task 12605	Added N48VOk in IOName Enum.
+Ericsson.Rcm.Tib2.dll			R3A02	Task 12605	Added N48VOk in IONameDictionary
+
+=============================================================
+
+R5A11 (ecspeal, 2018-06-15) 
+IviConfigurationStore			R6A03	Task 12577	IviConfigurationStore: MXA ModulationMeasurement.
+ 								Missing ModulationMeasurement for MXA.
+								Add  ModulationMeasurement for MXA.
+
+
+
+=============================================================
+
+R5A10 (ecsgowa, 2018-06-15) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dll	R3A01	Task 11918	Added override of OptionsCore in RFSwitchBase.cs 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dll	R3A02	Task 12574	Updated HardwareVersionCore to handle missing boards in box, changed in RFSwitchRFSC.cs
+
+=============================================================
+
+R5A09 (ecssass, 2018-06-8) 
+Ericsson.Rcm.Etsw.dll			R4A02	Task 12536	Setting of SCP client (FileTransfer) KeepAliveInterval to 60 s is added in EtswSshCommunication class GetScpClient method.
+
+=============================================================
+
+R5A08 (ecslhed, 2018-06-7) 
+Ericsson.Rcm.TypeLibrary.dll		R5A02	Task 12443	Added support for Tcp to Dut connection check.
+Ericsson.Rcm.Tib2.dll			R3A01
+
+=============================================================
+
+R5A07 (ecssass, 2018-06-7) 
+Ericsson.Rcm.TypeLibrary.dll		R5A01	Task 12515	New method to read uncompensated power in watt in IRFPowerMeasurement is added.
+Ericsson.Rcm.PM.RohdeSchwarzNrpxxS.dll	R2A01	Task 12516	New method to read uncompensated power in watt in IRFPowerMeasurementTrace is added.
+
+=============================================================
+
+R5A06 (equnjia, 2018-06-2) 
+ConfigurationStore CXP9040665_1		R6A02	Task 12425	Add RF-Mux path to combine all the 16 branches together
+
+
+=============================================================
+
+R5A05 (ecssass, 2018-05-31) 
+Ericsson.Rcm.Etsw.dll			R4A01	Task 12004	Setting of SSH client KeepAliveInterval to 60 s is added in EtswSshCommunication class Open method.
+
+=============================================================
+
+R5A04 (ecserva, 2018-05-31) 
+Bugfixed this, forgot symlink to ..json-file
+ConfigurationStore CXP9040665_1		R6A01	Task 12002	Logical name Amplifier1, Amplifier2, Amplifier3, Amplifier4 and NetworkAnalysis added. LTN2142278_901.json added.
+
+=============================================================
+
+R5A03 (ecserva, 2018-05-30) 
+ConfigurationStore CXP9040665_1		R6A01	Task 12002	Logical name Amplifier1, Amplifier2, Amplifier3, Amplifier4 and NetworkAnalysis added. LTN2142278_901.json added.
+
+=============================================================
+
+R5A02 (ecstws, 2018-05-25) 
+Merge from R4A.
+
+=============================================================
+R5A01 (ecstws, 2018-05-17) 
+First version on R5A development branch, equal to R4A15.
+
+=============================================================
+
+R4A (ecstws, 2018-05-25) 
+Release version, equal to R4A16.
+
+=============================================================
+
+R4A16 (ecsnstr, 2018-05-20) 
+Ericsson.Tcm.Ruma			R3A02	Task 11925	ITXData.SetIQDataFile, delete all configured carriers before setting new TX Data File instead of after.
+
+=============================================================
+
+R4A15 (efrenik, 2018-05-16) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dll	CYA1030576_1-R2B01	Task 11892 No identity from rcm driver. Overloaded GetIdentity() in driver.
+
+=============================================================
+
+R4A14 (ecssass, 2018-05-15) 
+Ericsson.Rcm.NA.KeysightPna.dll		R2A02	Task 11865	Method GetEcalModuleInfoCore is modified to take care of if a - character is included in the connector type.
+Ericsson.Rcm.Core.dll			R2C02	Task 11869	Set properties Cache, RangeCheck, QueryInstrumentStatus and Simulate are added in interface IDriverSession.
+
+=============================================================
+
+R4A13 (ecssass, 2018-05-9) 
+Ericsson.Rcm.TypeLibrary		R4A04	Task 11854	New method Init is added in interface INetworkAnalysisCalibrationEcal which also specifies the Ecal module.
+
+Ericsson.Rcm.NA.KeysightPna		R2A01	Task 11855	New method Init is added in interface INetworkAnalysisCalibrationEcal which also specifies the Ecal module.
+
+=============================================================
+
+R4A12 (ecslhed, 2018-05-7) 
+Ericsson.Rcm.LedAnalyzer.Feasa.dll	R3A01	Task 11799	LED driver don't close port at TP_REMOVE.
+
+=============================================================
+
+R4A11 (ecserva, 2018-05-7) 
+Corrected task, dll compiled wrong!??! 
+Ericsson.Rcm.NA.KeysightEna.dll		R1A03	Task 11810	Implement WritePowerCalibrationCompensationCore().
+
+=============================================================
+
+R4A10 (ecstogu, 2018-05-3) 
+Ericsson.Rcm.Etsw.dll			R3A01	Task 11803	Timeout is added in method ReceiveMaxLength in EtswSerialCommunication class.
+
+=============================================================
+
+R4A09 (ecserva, 2018-04-27) 
+Correction!!! Added to target!!!
+Ericsson.Rcm.Amp.RohdeSchwarz.dll	R1A01	Task 11126	
+
+=============================================================
+
+R4A08 (ecserva, 2018-04-27) 
+Ericsson.Rcm.Amp.RohdeSchwarz.dll	R1A01	Task 11126	Driver for R&S BBA150 implemented.
+Ericsson.Rcm.NA.KeysightEna.dll		R1A02	Task 11810	Implement WritePowerCalibrationCompensationCore().
+
+=============================================================
+
+R4A07 (ecserva, 2018-04-27) 
+Ericsson.Rcm.TypeLibrary.dll		R4A03	Task 11808	Implement interface IRFAmplifier.
+
+=============================================================
+
+R4A06 (ecstws, 2018-04-27) 
+Ericsson.Rcm.Gui.exe			R1A01	Task 11805	Create a tool to show instrument driver GUI.
+Ericsson.Rcm.Core.dll			R2C01	Task 11806	Update interface to give possibilityt to read statecache variables externally.
+Ericsson.Rcm.TypeLibrary.dll		R4A02	Task 11807	Add common statecach variables to support instrument GUI.
+
+=============================================================
+
+R4A05 (ecshess, 2018-04-24) 
+Merge from R3B
+
+=============================================================
+
+R4A04 (ecsjiol, 2018-04-4) 
+ConfigurationStore CXP9040665_1		R5A01	Task 2543	Added Physical Name FLASH1 for Tif.Tib2 Driver.
+
+=============================================================
+
+R4A03 (ecserva, 2018-04-3) 
+Ericsson.Rcm.TypeLibrary.dll		R4A01	Task 11301	New interface WritePowerCalibrationCompensation(int portNumber, IEnumerable<double> factors).
+
+=============================================================
+
+R4A02 (ecstws, 2018-03-27) 
+Merge from R3A.
+
+=============================================================
+R4A01 (ecstws, 2018-03-21) 
+First version on R4A development branch, equal to R3A66.
+
+=============================================================
+
+R3B (ecshess, 2018-04-23) 
+Release version, equal to R3B02
+
+=============================================================
+
+R3B02 (ecsnstr, 2018-04-19) 
+Ericsson.Rcm.RuMa			R3B01	Task 11702	ITXData.EnableCpc - Bugfix, set statecache variable when setting AUTO_AXC and NO_AXC.
+
+=============================================================
+
+R3B01 (ecshess, 2018-04-16) 
+Ericsson.Rcm.RuMa.dll			R2B01	Task 11702	Changed default AxCMode to AUTO_AXC and implemented possebility to set AUTO_AXC.
+
+=============================================================
+
+R3A (ecstws, 2018-03-27) 
+Release version, equal to R3A66.
+
+=============================================================
+
+R3A66 (ecssass, 2018-03-19) 
+Ericsson.Rcm.Core.dll			R2B02	Task 10845	Add support to simulate driver via configuration store.
+
+Ericsson.Rcm.SA.RohdeSchwarz.dll	R1A07	Task 9949	New ConfigureOptimal method is added.
+						Task 9997	Properties for LocalOscillatorInjection are added.
+						Task 10795	Enable status register for power and frequency errors.
+
+  
+Ericsson.Rcm.SA.KeysightMxa.dll		R1A05	Task 9950	Added new configureOptimal method
+						Task 10741	Use *STB? instead of ReadSTB that did not detect register changes correctly.
+libMPSSE.dll				R1B			Changed to 32bit. 
+
+=============================================================
+
+R3A65 (ecsgowa, 2018-03-16) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dll R2A09	Task 9993	RFSwitchbox driver update to clear previous switch configuration before writing new switch configuration.
+
+=============================================================
+
+R3A64 (ecstws, 2018-03-16) 
+LTN899450_1.json			R4A12	Task 11068	Add RF switch configurations for AIR5121 calibration DUT, corrections LTN899450_1.json and LTM902959_1.json add additional paths.
+
+=============================================================
+
+R3A63 (ecstws, 2018-03-16) 
+LTN899450_1.json			R4A11			Added missing file LTN899450_1.json.
+
+=============================================================
+
+R3A62 (ecstws, 2018-03-15) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dllR2A07	Task 11063	RFSwitchbox driver update to support IFileTransfer.
+
+=============================================================
+
+R3A61 (ecstws, 2018-03-15) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dllR2A07	Task 11063	RFSwitchbox driver update to support IFileTransfer.
+LTN899450_1.json				Task 11068	Add RF switch configurations for AIR5121 calibration DUT.
+
+=============================================================
+
+R3A60 (ecssass, 2018-03-14) 
+Ericsson.Rcm.TypeLibrary.dll		R3A19	Task 11062	NetworkAnalysis interfaces to support confidence check using ECAL module are added. Interface INetworkAnalysisCalibrationEcal is modified to be able to get info about ECAL module.
+
+Ericsson.Rcm.NA.KeysightPna.dll		R1A10	Task 11062	Interfaces to support confidence check using ECAL module are added. Interface INetworkAnalysisCalibrationEcal is modified to be able to get info about ECAL module.
+
+=============================================================
+
+R3A59 (ecstws, 2018-03-13) 
+Ericsson.Rcm.TypeLibrary.dll		R3A18	Task 10973	Added ITifCommon, TifCommonBase and SmartEnumBase.
+
+=============================================================
+
+R3A58 (ECSNSTR, 2018-03-13) 
+Ericsson.Rcm.RuMa			R2A10	Task 11044	BugFix FetchIQDataCore. Imaginary and Real values are mixed.
+
+=============================================================
+
+R3A57 (ecshess, 2018-03-12) 
+Ericsson.Rcm.RuMa.dll			R2A09 	Task 10502	Revoked. Remove PortPairSynchMode from cpc merge.
+
+=============================================================
+
+R3A56 (ecsfrin, 2018-03-6) 
+CXP9040665_1\LTN2142278_101.json	R4A10	Task 11009	1: Corrected compensationpath for SG_COMB_B switchpath
+								2: Removed all DUT application specific paths:
+								    TX* to RfPowerMeasurement 
+								    RfPowerGeneration to RX*
+
+=============================================================
+
+R3A55 (ecserva, 2018-02-27) 
+Ericsson.Rcm.NA.KeysightEna.dll		R1A01	Task 10939	New driver for ENA networkanalyzer.
+
+=============================================================
+
+R3A54 (ecserva, 2018-02-27) 
+Ericsson.Rcm.TypeLibrary.dll		R3A17	Task 10936	NetworkAnalyzer interface updated: Add absolute measurements A_1, A_2, B_1, B_2, R1_1, R1_2, R2_1 and R2_2. Add frequency offset mode functionality. Add power calibration functionality.
+
+=============================================================
+
+R3A53 (ecslhed, 2018-02-22) 
+Ericsson.Rcm.PowerDistribution.dll	R1A03	Task 10863	PDB driver is not released on TP_REMOVE.
+
+=============================================================
+
+R3A52 (ecslhed, 2018-02-21) 
+IviConfigurationStore.xml               R4A09   Task 10848	Logical name and driver session for Keysight344xx resistance measurement added.
+
+=============================================================
+
+R3A51 (ecsjiol, 2018-02-20) 
+Ericsson.Rcm.BoardPowerManager.dll	R3A02	Task 10747	Property IsMasterCommunication must is set to False after MasterBpmProgramming has been done.
+
+=============================================================
+
+R3A50 (ecsjiol, 2018-02-20) 
+Ericsson.Rcm.Etsw.dll			R2A03	Task 10634	Removed the trim of response when using SendReceive method. This functionality is moved to DutBase
+
+=============================================================
+
+R3A49 (ecstws, 2018-02-20) 
+Ericsson.SC.CompensationManager.dll	R1A03	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.Sib.dll			R1A05	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.PowerDistribution.dll	R1A02	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.Tib2.dll			R2A03	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.Tib.dll			R4A02	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.Dmm.Keysight34970A.dll	R2A01	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.Dmm.Keysight344xx.dll	R2A01	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.BoardPowerManager.dll	R3A01	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.SG.RohdeSchwarz.dll	R1A05	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.CWSG.RohdeSchwarz.dll	R1A04	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.Psu.Keysight66xx.dll	R2A01	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.PM.RohdeSchwarzNrpZxx.dll	R1B01	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.PM.RohdeSchwarzNrpxxS.dll	R1A07	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.SA.KeysightMxa.dll		R1A04	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.ACPsu.Keysight68xx.dll	R2A01	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.Cnt.Keysight532xx.dll	R1B02	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.Psu.Keysight57xx.dll	R2A01	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.Sg.KeysightMXG.dll		R1B02	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.Load.KeysightN33xx.dll	R1A05	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.RFSwitch.KeysightL449xA.dllR2A06	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.Etsw.dll			R2A02	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.SA.RohdeSchwarz.dll	R1A06	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.RuMa.dll			R2A07	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.NA.KeysightPna.dll		R1A09	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.Psu.Keysight69xx.dll	R2A01	10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.IviConfigServer.dll	R1B01	10797	Update to .NET Framework 4.7.1, Drivers.
+
+=============================================================
+
+R3A48 (equnjia, 2018-02-19) 
+Ericsson.Rcm.LedAnalyzer.Feasa.dll	R2A	Task 		Rebuild with the .NET Framework 4.7.1
+
+=============================================================
+
+R3A47 (ecstws, 2018-02-19) 
+Ericsson.Rcm.Core.dll			R2B01	Task 10797	Update to .NET Framework 4.7.1, Drivers.
+Ericsson.Rcm.TypeLibrary.dll		R3A15	Task 10797	Update to .NET Framework 4.7.1, Drivers.
+
+=============================================================
+
+R3A46 (ecsgowa, 2018-02-13) 
+Ericsson.Rcm.NA.KeysightPna.dll		R1A08	Task 10624	Bugfix in NWA driver to support a list of adapters to be calibrated
+
+=============================================================
+
+R3A45 (ecsgowa, 2018-02-12) 
+Ericsson.Rcm.NA.KeysightPna.dll		R1A07	Task 10624	Update NWA driver to support a list of adapters to be calibrated
+
+=============================================================
+
+R3A44 (ecslhed, 2018-02-8) 
+IviConfigurationStore.xml		R4A07	Task 10361	Added logical names for PSB test: CurrentLoad, Sib, DCCurrentMeasurementElectronicLoad, DCVoltageMeasurementElectronicLoad
+
+=============================================================
+
+R3A43 (ecslhed, 2018-02-8) 
+Ericsson.Rcm.Sib.dll			R1A04	Task 10061      "Dispose()" added to release SIB driver at TP_REMOVE.
+
+=============================================================
+
+R3A42 (ecslhed, 2018-02-7) 
+Ericsson.Rcm.TypeLibrary.dll			R3A14	Task 10061	Enums in iSib corrected.
+
+=============================================================
+
+R3A41 (ecserva, 2018-01-31) 
+Reinsert the update regarding Support for SSH!!!!!!!!!!!!!!!!
+Ericsson.Rcm.TypeLibrary.dll			R3A10	Task 3914	Support for SSH is implemented.
+
+=============================================================
+
+R3A40 (ecserva, 2018-01-31) 
+IviConfigurationStore.xml		R4A06	Task 10557	Add DutCommmunicationSSH to ConfigStore.
+
+=============================================================
+
+R3A39 (ecstws, 2018-01-30) 
+
+Revoke the updates regarding Ru-master interface !!!!!!!!!!!!!!
+
+Ericsson.Rcm.TypeLibrary.dll	R3A11 --> R3A09	Task 10374	IRuMaster updated with new interface, IRuMasterIQData, and FetchIQData changed to return IRuMasterIQData.
+Ericsson.Rcm.RuMa.dll		R2A06 --> R2A05	Task 10374	FetchIQData returns IRuMasterIQData.
+						Task 10502	PortPairSynchMode is set when enabling cpc merge. 
+						Task 9933	All carriers are deleted when new IQFile is loaded to remove all old carriers.
+
+=============================================================
+
+R3A38 (ecssass, 2018-01-30) 
+Ericsson.Rcm.Etsw.dll			R2A01	Task 3914	Support for SSH is implemented.
+
+=============================================================
+
+R3A37 (ecshess, 2018-01-30) 
+OBS!! This release needs to be synced with a new InstrumentHelper in 5G_Radio_Resource.
+
+Ericsson.Rcm.TypeLibrary.dll		R3A11	Task 10374	IRuMaster updated with new interface, IRuMasterIQData, and FetchIQData changed to return IRuMasterIQData.
+Ericsson.Rcm.RuMa.dll			R2A06	Task 10374. FetchIQData returns IRuMasterIQData.
+						Task 10502. PortPairSynchMode is set when enabling cpc merge. 
+						Task 9933. All carriers are deleted when new IQFile is loaded to remove all old carriers.
+
+=============================================================
+
+R3A36 (ecstws, 2018-01-30) 
+Renci.SshNet.dll			R1A	Task 10549	Add 3rd party tool for SSH/SCP to drivers package.
+
+=============================================================
+
+R3A35 (ecshess, 2018-01-22) 
+Ericsson.Rcm.Tib2.dll			R2A02	Task 9782	Updated GetState and SetState for function based IONames. 
+
+=============================================================
+
+R3A34 (ecssass, 2018-01-19) 
+Ericsson.Rcm.SG.KeysightMXG.dll         R1B01   Task 10154      WriteWaveformCore calculation of IQ-data is corrected.
+
+=============================================================
+
+R3A33 (ecshess, 2018-01-17) 
+Ericsson.Rcm.SA.KeysightMxa.dll		R1A03	Task 10108	ReadIQData changed to handle returned IQData correctly.
+
+=============================================================
+
+R3A32 (ecsgowa, 2018-01-17) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dll	R2A05	Task 8092	Updated Set/Get PID to handle all FrontExtensions(1-8)
+
+=============================================================
+
+R3A31 (ecssass, 2018-01-12) 
+Ericsson.Rcm.SG.RohdeSchwarz.dll	R1A03	Task 10104	Optimization is changed from QHIG (high quality) to FAST in ResetCore.
+
+=============================================================
+
+R3A30 (ecsgowa, 2018-01-12) 
+Ericsson.Rcm.Load.KeysightN33xx.dll	R1A04	Task 8316	Added "DisableAllLoads" to CurrentLoad.cs.
+
+=============================================================
+
+R3A29 (ecshess, 2018-01-11) 
+Ericsson.Rcm.RuMa.dll			R2A05	Task 10000	Removed unneeded SetLoopLengthfromIQFile method. Correct LoopLength are set according to file when file is set.
+								Also increased _dlCarrierStatus to hold 64 carriers instead of 16.
+
+=============================================================
+
+R3A28 (ecsgowa, 2018-01-10) 
+Ericsson.Rcm.TypeLibrary.dll		R3A09	Task 8316	Updated ICurrentLoad.cs with "DisableAllLoads".
+
+=============================================================
+
+R3A27 (ecslhed, 2018-01-9) 
+Ericsson.Rcm.TypeLibrary.dll		R1A07	Task 10061	SIB interface corrections.
+
+=============================================================
+
+R3A26 (ecstws, 2018-01-9) 
+Ericsson.Rcm.NA.KeysightPna.dll		R1A06	Task 10062	New parameter for the function AcquireNextStandardCore NA driver.
+
+=============================================================
+
+R3A25 (ecstws, 2018-01-9) 
+ConfigurationStore			R1Axx	Task 9741	Config store /2 and /3 removed from drivers package!
+Ericsson.Rcm.TypeLibrary.dll		R1A07	Task 8592	INetworkAnalysis, new parameter for the function AcquireNextStandardCore.
+
+Network analyzer driver currently not working since interface method updated but not the driver.
+
+=============================================================
+
+R3A24 (ecsgowa, 2018-01-8) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dll	R2A04	Task 9993	Update RFSwitchBase.cs to be able to write switch configuration to switchbox from a json file
+
+=============================================================
+
+R3A23 (ecsgowa, 2018-01-8) 
+Ericsson.Rcm.TypeLibrary.dll		R3A06	Task 9993	Change name of interface for RFSC switchbox in ISwitchPath and SwitchPathBase.
+
+=============================================================
+
+R3A22 (ecslhed, 2018-01-4) 
+Ericsson.Rcm.Sib.dll			R3A05	Task 3791	Driver for SIB added.
+
+=============================================================
+
+R3A21 (ecslhed, 2017-12-21) 
+Ericsson.Rcm.TypeLibrary.dll		R3A05	Task 3790	Create interface for SIB driver
+
+=============================================================
+
+R3A20 (ecshess, 2017-12-18) 
+Ericsson.Rcm.TypeLibrary.dll		R3A04	Task 9976	Added more parameters to SetIQDataFile Method in IRuMaster.
+Ericsson.Rcm.RuMa.dll			R2A04	Task 9988	Added method SetIQDataFile for ITxData.
+
+=============================================================
+
+R3A19 (ecshess, 2017-12-18) 
+Ericsson.Rcm.TypeLibrary.dll		R3A03	Task 9976	Added new method SetIQDataFile in RuMaster interface ITxData.
+
+=============================================================
+
+R3A18 (ecsgowa, 2017-12-15) 
+Ericsson.Rcm.RFSwitch.KeysightL449xA.dll	R2A03	Task 8092	Correction in write/read PID.
+
+=============================================================
+
+R3A17 (ezureth, 2017-12-14) 
+Ericsson.Rcm.LedAnalyzer.Feasa.dll		R1B		Task 9953 	Fix for syntax error caused by driver
+
+=============================================================
+
+R3A16 (ecspeal, 2017-12-13) 
+Ericsson.Rcm.RuMa.dll			R2A03	Task 8929	RuMaster,We will need to use 2 ports on the RuMaster. (Port1A, Port1B).
+								We will need to use 2 ports on the RuMaster. (Port1A, Port1B).
+								Implement support for more then one port.
+
+
+=============================================================
+
+R3A15 (ecshess, 2017-12-11) 
+Ericsson.Rcm.Tib.dll			R4A01	Task 9924	Added erase method that erase subsectors.
+
+=============================================================
+
+R3A14 (ecshess, 2017-12-8) 
+Ericsson.Rcm.TypeLibrary.dll		R3A02	Task 9911	Added posts in TriggerSource enum in IRuMaster.
+
+=============================================================
+
+R3A13 (ecshess, 2017-12-8) 
+Ericsson.Rcm.Tib2.dll			R2A01	Task 9779	Added SubSectorErase and changed to use 4 byte instead of 3 byte addressing.
+
+=============================================================
+
+R3A12 (ecsfrin, 2017-12-8) 
+LTY1511850_10.json			ADDED	Task 6709	Added JSON for RBT 3246 Test Fixture
+
+=============================================================
+
+R3A11 (ecsgowa, 2017-12-8) 
+Ericsson.Rcm.RFSwitch.KeysightL449xA.dll	R2A02	Task 8996	Improved startup and stability of RFSC RfSwitchbox.
+fx4srm.dll					R2H01	Task 9806	All null characters are removed in method ReadString.
+
+=============================================================
+
+R3A10 (ecslard, 2017-12-6) 
+Ericsson.Rcm.Ruma		R2A02			Task #9762. Added check of (_dlCarrierStatus[cpriPort][carrier].Exists == true)) before accepting statecach in SetGainCore method.
+							
+
+=============================================================
+
+R3A09 (ecshess, 2017-12-4) 
+Ericsson.Rcm.RuMa.dll			R2A01	Task 9771 	Added method EnableCpcCore(CpriPort cpriPort, AxCMode axcMode)
+						Task 8110 	Added a Reset method that do nothing.
+
+=============================================================
+
+R3A08 (ecshess, 2017-12-4) 
+Ericsson.Rcm.TypeLibrary.dll		R3A01	Task 9771 	New Enum and a new EnableCpc method that takes AxcMode as input in IRuMaster.
+
+=============================================================
+
+R3A07 (ecsnstr, 2017-11-30) 
+CXP 904 0665/1				R4A03	Task 9781	Added PowerDistribution unit to configuration store.
+
+=============================================================
+
+R3A06 (ecsgowa, 2017-11-29) 
+Ericsson.Rcm.RFSwitch.Keysight449xA	R2A01	Task 8092	Added support for write/read of PID
+
+=============================================================
+
+R3A05 (ecslern, 2017-11-28) 
+CXP9040665_1-L1BF_Radio-FDD		R4A02			Change to ConfigStore R4A02
+
+=============================================================
+
+R3A04 (ecstws, 2017-11-23) 
+Merge from R2A.
+
+=============================================================
+
+R3A03 (ecslard, 2017-11-22) 
+srmRsNrpz		R2A02		Added to data packet!!!
+
+=============================================================
+
+R3A02 (ecslard, 2017-11-22) 
+srmNrpz		R2A02		Added to data packet.
+
+=============================================================
+
+R3A01 (ecstws, 2017-11-17) 
+Merge from R2A50.
+
+=============================================================
+
+R2A (ecstws, 2017-11-23) 
+Release version, equal to R2A50.
+
+=============================================================
+
+R2A50 (ecstws, 2017-11-17) 
+Ericsson.Rcm.NA.KeysightPna.dll		R1A05	Task 9222	Add possibility to read network analyzer SnP trace.
+
+=============================================================
+
+R2A49 (ecshess, 2017-11-16) 
+Ericsson.Rcm.TypeLibrary.dll		R2A14	Task 9214	New Fetch methods that returns trach in db/degree and Complex for all selected S-parameters of the selected ports.
+						Task 8652	Erlier added LocalOscillatorInjection removed from ISpectrumMeasurement.
+
+=============================================================
+
+R2A48 (ecslern, 2017-11-15) 
+CXP9040665_1-L1BF_Radio-FDD		R3A08			IviConfigurationStore.xml   bug fix, R3A07 was modifid from to old version
+
+=============================================================
+
+R2A47 (ecshess, 2017-11-14) 
+Ericsson.Rcm.Core.dll			R2A03	Task 8092	Added a setter for InstrumentInfo.HardwareVersions 
+Ericsson.Rcm.Tib2.dll			R1A14	Task 8921	Added support to read/write pid using HardwareVersions property
+Ericsson.Rcm.Tib.dll			R3A06	Task 8921	Added support to read/write pid using HardwareVersions property
+
+=============================================================
+
+R2A46 (ecshess, 2017-11-13) 
+Ericsson.Rcm.TypeLibrary		R2A13	Task 8921	Added a Pid class to replace the IPidStorage.Pid class that is to be removed.
+
+=============================================================
+
+R2A45 (ecssass, 2017-11-10) 
+Ericsson.Rcm.Core.dll			R2A02	Task 9101	A new method GetAliasName is added in ISessionManager, SessionManager and SessionMemory.
+						Task 8092	A set property for interface IInstrumentInfo HardwareVersions is added.
+
+Ericsson.Rcm.PM.RohdeSchwarzNrpxxS.dll	R1A06	Task 8705	Support for compensation loss is added in Trigger.Internal.Level property.
+						Task 8812	A PostConditions to set average mode is added for the state cache variable GetCacheMeasurementMode. 
+
+=============================================================
+
+R2A44 (ecshess, 2017-11-7) 
+Ericsson.Rcm.Tib2			R1A13	Task 8921	Added support to read out Pid info from all bords connected
+Ericsson.Rcm.Tib			R3A05	Task 8921	Added support to read out Pid info from all bords connected
+
+=============================================================
+
+R2A43 (ecshess, 2017-11-7) 
+Ericsson.Rcm.TypeLibrary		R2A12	Task 8921	IPidStorage methods renamed to Read() and Write() instead of Load() and Store(). Tib drivers will be updates soon
+
+=============================================================
+
+R2A42 (ecsfrin, 2017-11-7) 
+Ericsson.Rcm.NA.KeysightPna.dll		R1A04	TASK3690	Corrected alignment of number of data/frequency span for Complex data fetch
+
+=============================================================
+
+R2A41 (ecslern, 2017-11-2) 
+CXP9040665_1-L1BF_Radio-FDD		R3A07			LogicalName NetworkAnalysis chang to NetworkAnalysisCal, pleas add "LOGICALNAME_NETWORK_ANALYSIS_S", "NetworkAnalysisCal"
+
+=============================================================
+
+R2A40 (ecslern, 2017-10-27) 
+CXP9040665_1-L1BF_Radio-FDD		R3A06			New Common ConfigStore /2 and /3 will be removed
+
+=============================================================
+
+R2A39 (ecsnstr, 2017-10-27) 
+Ericsson.Rcm.RuMa			R1A12	Task 8754	SetLineRate, clear internal carrier cache.
+
+=============================================================
+
+R2A38 (ecshess, 2017-10-27) 
+Ericsson.Rcm.Tib2.dll			R1A12	Task 8554	Added IdQuery in ISwitch and IPidStorage also.
+Ericsson.Rcm.Tib.dll			R3A04	Task 8554	Added IdQuery in ISwitch and IPidStorage also.
+
+=============================================================
+
+R2A37 (ecsnstr, 2017-10-26) 
+Ericsson.Rcm.RuMa			R1A11	Task 8754	Initialize the RuMaster correctly when using StartRuMaDefault.
+
+=============================================================
+
+R2A36 (ecsjiol, 2017-10-26) 
+Ericsson.Rcm.Tib.dll			R3A03			Fix for Tib.dll Registration
+Ericsson.Rcm.BoardPowerManager.dll	R2A01	Task 6808	Added functionality for Master BPM
+Ericsson.Rcm.TypeLibrary.dll		R2A11	Task 6808	Updates for Master BPM
+
+=============================================================
+
+R2A35 (ecspeal, 2017-10-26) 
+Ericsson.Rcm.RuMa.dll			R1A10	Task 8691	SetLineRateCore,Ru Master driver support for 10.1 GBit
+								Need to have support for  10.1 G bit CPRI. and have the possibility to change between different CPRI rates.
+								Update function SetLineRateCore Remove all carrier configurations. Before line rate change.
+
+=============================================================
+
+R2A34 (ecspeal, 2017-10-26) 
+
+=============================================================
+
+R2A33 (ecslard, 2017-10-25) 
+CXP 904 0665/1		R3A05		Fix in LTM 901 591/2.json
+
+=============================================================
+
+R2A32 (ecshess, 2017-10-24) 
+Ericsson.Rcm.Tib.dll			R3A02	Task 8554	Added idQuery to check pid prodNo
+Ericsson.Rcm.Tib2.dll			R1A11	Task 8554	Changed idQuery to check pid prodNo instead of pid alias.
+OBS!! IdQuery set to true in TC requires that pid has been written in the Tib board.
+
+=============================================================
+
+R2A31 (ecslern, 2017-10-23) 
+CXP9040665_1-L1BF_Radio-FDD		R3A04			Wrong LTN2142278_101.json wrong version linked
+
+=============================================================
+
+R2A30 (ecslern, 2017-10-23) 
+Apply release info according to format below and delete these two rows when done!
+Testdll-name				R-State	Task ####	Testmethod, Task slogan and change
+CXP9040665_1-L1BF_Radio-FDD		R3A03			
+LTN2142278_101.json			R3A03
+LTM902591_1.json						Added
+LTN2142267.json							Added
+LTN2142278_201.json						Added
+LTN2142278_302.json						Added
+
+=============================================================
+
+R2A29 (ecshess, 2017-10-23) 
+Ericsson.Rcm.TypeLibrary.dll	R2A09		Task 7522	Updates to support TIB2+ funktionality
+Ericsson.Rcm.Tib2.dll		R2A09		Task 7522	Updates to support TIB2+ funktionality
+
+=============================================================
+
+R2A28 (ecslern, 2017-10-23) 
+Ericsson.Rcm.Tib2.dll			R1A09			Bug in Mux setup
+New ...... CXP9040665_1-L1BF_Radio-FDD  R3A02			THIS  /1  shold replases /2 and /3  This will be REMOVED in comming release
+
+=============================================================
+
+R2A27 (ecsnstr, 2017-10-19) 
+ConfigurationStoreAir5121		R1A28	-		Updates for RFPowerMeasurementNrpS and RFSC
+
+=============================================================
+
+R2A26 (ecshess, 2017-10-16) 
+libMPSSE.dll		R1A	Task 7554	Added libMPSSE.dll needed for SPI
+
+=============================================================
+
+R2A25 (ecslern, 2017-10-11) 
+CXP9040665_3-Air3246			R1A29			Uppdated Switch_Dmm correct settings
+
+=============================================================
+
+R2A24 (ecslard, 2017-10-10) 
+CXP 904 0665/1		R1A27		Added Exg and Mxa to config store and RF switch path config file for LTM 902 591/2	
+Ericsson.Rcm.Tib	R3A01		IFlash added
+Ericsson.Rcm.Tib	R1A08		IFlash added
+
+=============================================================
+
+R2A23 (ecslard, 2017-10-4) 
+Ericsson.Rcm.Core		R2A01			SetDataValue is added in the IInitialSettings interface.
+Ericsson.Rcm.BoardPowerManager  R1B04			Updated....	
+
+=============================================================
+
+R2A22 (ecsjiol, 2017-10-4) 
+Ericsson.Rcm.TypeLibrary.dll		R2A07	Task 6808	Added IMasterBpmControl interface and MasterBpmControlBase class. Updated IboardPowerManagerBase and BoardPowerManagerBase
+
+=============================================================
+
+R2A21 (ecsnstr, 2017-10-3) 
+Ericsson.Rcm.RuMa			R1A09	Task 8482	Implemented new interface method IConfiguration.SetAxCConatinerFormat.
+
+=============================================================
+
+R2A20 (ecslard, 2017-10-3) 
+CAX 106 0263		R1A		Added FTD2XX_NET.dll
+
+=============================================================
+
+R2A19 (ecsnstr, 2017-10-2) 
+Ericsson.Rcm.TypeLibrary		R2A05	Task 8409	Added enums CpriFlowDirection and AxCContainerFormat to the RuMaster namespace.
+Ericsson.Rcm.TypeLibrary		R2A05	Task 8409	Added SetAxCContainerFormat method to IConfiguration.
+
+=============================================================
+
+R2A18 (ecslern, 2017-09-29) 
+CXP9040665_3-Air3246			R1A17			LTN2142278_101.json uppdated TX1-TX7 - PM
+
+=============================================================
+
+R2A17 (equnjia, 2017-09-28) 
+CXP9040665_3				R1A26	Task		Add the MXA and FSP in the configuration store
+
+=============================================================
+
+R2A16 (equnjia, 2017-09-26) 
+CXP9040665_1				R2A01	Task		Add the LTN2142278_101.json which was missing in last release.
+
+=============================================================
+
+R2A15 (EQUNJIA, 2017-09-25) 
+CXP9040665_1				R2A01	Task		Update to the new ConfigStore
+
+=============================================================
+
+R2A14 (ecshess, 2017-09-25) 
+Ericsson.Rcm.Tib2			R1A07	Task 8066	Changed io name tcpSpare2Dn to tcSpare2Dn
+
+=============================================================
+
+R2A13 (ecsnstr, 2017-09-22) 
+ConfigurationStore Air5121		R1A26	-		Forgot to symlink the RFSC json file to the driver folder.
+
+=============================================================
+
+R2A12 (ecsnstr, 2017-09-22) 
+ConfigurationStore Air5121		R1A26	Task 8055	Add support for Nrp40S power meter in test system.
+ConfigurationStore Air5121		R1A26	Task 8217	Add support for the RFSC LTN 214 2278/302 in test system.
+
+=============================================================
+
+R2A11 (ecslhed, 2017-09-18) 
+CXP9040665/2				R1A25	Task 8129	SwitchPathTib and SwitchPathDmm added for TIB2 and 34970A.
+
+=============================================================
+
+R2A10 (emwfreg, 2017-09-18) 
+
+Ericsson.Rcm.SA.RohdeSchwarz.dll	R1A05	Task 8059: 	Min and max handling of number of trace points is added.
+
+=============================================================
+
+R2A09 (ecslern, 2017-09-15) 
+CXP9040665_3-Air3246			R1A24
+CXP9040665_2-28GHz_AAS_Unit		R1A24
+
+=============================================================
+
+R2A08 (ecslern, 2017-09-15) 
+CXP9040665_3-Air3246			R1A24    		RFPowerMeter NRP-S Added
+
+=============================================================
+
+R2A07 (ecslern, 2017-09-15) 
+Ericsson.Rcm.TypeLibrary.dll		R2A04 	Task 7586: AllowedPointsRange property is removed from IRFPowerMeasurement.
+Ericsson.Rcm.PM.RohdeSchwarzNrpxxS.dll  R1A05	Task 7586: AllowedPointsRange property is removed from IRFPowerMeasurement.
+
+=============================================================
+
+R2A06 (ecstws, 2017-09-14) 
+Merge from R1A.
+
+=============================================================
+
+R2A05 (ecshess, 2017-09-11) 
+CYA1030546_1-Ericsson.Rcm.TypeLibrary	R2A02	Task 5410	Added IFlash interface, and removed ISpi, in ITif
+
+=============================================================
+
+R2A04 (ecslern, 2017-09-8) 
+Ericsson.Rcm.TypeLibrary.dll			R2A01		#7586 	Update RCM Typelibrary for PM Driver for Tx puls train
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dll	R1A05		#7247   Uppdate PM driver for Tx puls train
+Ericsson.Rcm.LedAnalyzer.Feasa.dll		R1A04		#7224 	Fix for the Initialization failure for the LedAnalyzer
+
+=============================================================
+
+R2A03 (ecsgowa, 2017-09-5) 
+Ericsson.Rcm.Load.KeysightN33xx.dll	R1A03		-	Added new driver for Load Keysight N33xxA
+
+=============================================================
+
+R2A02 (ecslern, 2017-09-5) 
+CXP9040665_3-Air3246			R1A22			Json file 101 uppdated
+
+=============================================================
+
+R2A01 (ecstws, 2017-09-4) 
+First version on R2A branch, same content as R1A100.
+R1A is now frozen and should only be updated on request from 6468.
+
+=============================================================
+
+R1B (ecstill, 2017-10-2) 
+Task 8340 Merge to kl_release as revision R1B, equal to R1B02
+
+=============================================================
+
+R1B02 (ecshess, 2017-09-18) 
+Ericsson.Rcm.TypeLibrary		R1B01	Task 7540	Added support to write data in Manufacturer section
+Ericsson.Rcm.BoardPowerManager		R1B03	Task 7540	Added support to write data in Manufacturer section
+
+=============================================================
+
+R1B01 (ecstill, 2017-09-15) 
+Ericsson.Rcm.BoardPowerManager		R1B01	Task 7540	Moved userSection 0x95 for Baxter to mfrSection, Changed to use List<string>mfrSectionAddresses to support Manhattan programming
+
+=============================================================
+
+R1A (ecstws, 2017-09-14) 
+Release version, equal to R1A106.
+
+=============================================================
+
+R1A106 (ecstill, 2017-09-13) 
+Ericsson.Rcm.RFSwitch.KeysightL449xA	R1B	Task 8043	Task 8043 Added BackEndCommunication.Open in RFSwitchBase --> InitializeCore. Added RFSwitchBackEndCommunication.cs since it was ViewPrivate 
+
+=============================================================
+
+R1A105 (ecsjiol, 2017-09-11) 
+Ericsson.Rcm.BoardPowerManager.dll	R1A09	Task 7540	Added user section 0x95 for Baxters
+
+=============================================================
+
+R1A104 (equnjia, 2017-09-11) 
+Ericsson.Rcm.LedAnalyzer.Feasa.dll	R1A05	Task 7224 	Fix for the Initialization failure for the LedAnalyzer
+
+=============================================================
+
+R1A103 (ecsjano, 2017-09-8) 
+Ericsson.Rcm.RFSwitch.KeysightL449xA	R1A05	Task8036	Fix for Initialization error.
+
+=============================================================
+
+R1A102 (ecshess, 2017-09-6) 
+CYA1030550_1-Ericsson.Rcm.Tib		R2A04			Cleaned for release. Removed FTD2XX_Net.dll that was included but not used.
+
+=============================================================
+
+R1A101 (equnjia, 2017-09-4) 
+Ericsson.Rcm.LedAnalyzer.Feasa.dll	R1A04	Task 7224 	Fix for the Initialization failure for the LedAnalyzer
+
+=============================================================
+
+R1A100 (ecstill, 2017-09-1) 
+Ericsson.Rcm.TypeLibrary		R1A34	Task 69498	IOName.ptcSpiMuxCtrlDut1 added
+
+=============================================================
+
+R1A99 (ecshess, 2017-08-31) 
+Ericsson.Rcm.RuMa.dll  	R1A08	Task 6853	Additional fix. inverted logic so throw excepion is not needed when doing create and destroy Tpf
+
+=============================================================
+
+R1A98 (ecstill, 2017-08-31) 
+Ericsson.Rcm.TypeLibrary 		R1A33 	Task 6949 	New Enum FlashPath.BootInternalTcpe
+Ericsson.Rcm.Tib 			R2A03 	Task 6949 	Added FlashPath.BootInternalTcpe
+
+=============================================================
+
+R1A97 (ecslard, 2017-08-30) 
+IviConfigurationStore		R1A24		Added ExtCommuniction
+
+=============================================================
+
+R1A96 (ecstill, 2017-08-30) 
+Ericsson.Rcm.Tib			R2A02	Task 6929	Added FlashPath.BootExternalTcpe
+
+=============================================================
+
+R1A95 (ecslhed, 2017-08-30) 
+Ericsson.Rcm.Tib2.dll			R1A06	Task 4200	AIR 5121 Fan Interface RS485, The serial buffers on TIB2 should not be activated at the same time.
+
+=============================================================
+
+R1A94 (ecstill, 2017-08-29) 
+Ericsson.Rcm.TypeLibrary 		R1A32	Task 6929 	New Enum FlashPath.BootExternalTcpe
+
+=============================================================
+
+R1A93 (ecsjiol, 2017-08-29) 
+CXP9040665_1				R1A18	Task ####	Added CXP9040665_1-R1A18 Config store to driver package
+
+=============================================================
+
+R1A92 (ecshess, 2017-08-25) 
+Ericsson.Rcm.Core.dll		R1A08			Includes a fix for instrument option needed for Mxa
+Ericsson.Rcm.SA.KeysightMxa.dll	R1A01	Task 3870	Added driver for SA Keysight Mxa
+Ericsson.Rcm.RuMa.dll		R1A07	Task 6853	All "throw new Exception" replaced with "throw new RumaException"
+
+=============================================================
+
+R1A91 (ecslard, 2017-08-24) 
+CXP 904 0674/1	Drivers 5G   R1A91   Added CXP 901 665/1 R1A23 (FanCommunication)
+
+=============================================================
+
+R1A90 (ecslern, 2017-08-23) 
+ConfigurationStore CXP9040665_3		R1A21			Jsonfile LTN2142278_101.json changed
+
+=============================================================
+
+R1A89 (equnjia, 2017-08-16) 
+CXP9040665_3				R1A20	Task 6779	Include the ConfigStore for the Air3246 to 5G Driver package 
+
+=============================================================
+
+R1A88 (equnjia, 2017-08-15) 
+CXP9040665_3				R1A19	Task 6779	Include the ConfigStore for the Air3246 to 5G Driver package 
+
+=============================================================
+
+R1A87 (ecsjano, 2017-07-6) 
+fx4srm.dll					R2G01		Added to resource
+Ericsson.Rcm.RFSwitch.KeysightL449xA.dll	R1A04		Updated RFSC Initialize.
+
+=============================================================
+
+R1A86 (ecsjano, 2017-07-5) 
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dll	R1A03	Task 4450	Fixed namespace used in DriverRegistration
+							Task 2408	Fixed support for RFSC box
+
+=============================================================
+
+R1A85 (ecsgowa, 2017-07-3) 
+Ericsson.Rcm.NA.KeysightPna.dll		R1A03	Task 6631 	Changed regular expression for ECal kits connectorNames to handle answers including "(" and ")".
+
+=============================================================
+
+R1A84 (ecslhed, 2017-06-30) 
+Ericsson.Rcm.TypeLibrary.dll            R1A31   Task 4123       ITif : Added IOName enableFanDmm for TIB2.
+
+=============================================================
+
+R1A83 (ecslhed, 2017-06-27) 
+Ericsson.Rcm.Tib2.dll                   R1A05   Task 4183       TIB2 external alarm io name has been changed in Tib2 FW (alarm1 -> xalarm1)
+
+=============================================================
+
+R1A82 (ecsnstr, 2017-06-27) 
+CXP9040665_2-28GHz_AAS_Unit		R1A22	-		Updated Air5121 configuration store.
+
+=============================================================
+
+R1A81 (ecslhed, 2017-06-22) 
+Ericsson.Rcm.TypeLibrary.dll		R1A30	Task 4128	ITif : Renaming FanPresentN to SetFanPresent.
+Ericsson.Rcm.Tib2.dll			R1A04	Task 4128	IPsb : Renaming FanPresentN to SetFanPresent.
+
+=============================================================
+
+R1A80 (ecslhed, 2017-06-22) 
+Ericsson.Rcm.TypeLibrary.dll		R1A29	Task 4128	FanPresentN.
+Ericsson.Rcm.Tib2.dll			R1A03	Task 4128	FanPresentN.
+
+=============================================================
+
+R1A79 (ecslnil, 2017-06-19) 
+Ericsson.Rcm.RuMa.dll			R1A05	Task 5643	- Implemented new IRXData functions according to updated Ericsson.Rcm.TypeLibrary (R1A28). These functions are also used by CaptureIQDataCore.
+								- Added StopWatch to all IRXData functions to be able to trace test time consumption.
+
+=============================================================
+
+R1A78 (ecslnil, 2017-06-19) 
+Ericsson.Rcm.TypeLibrary.dll		R1A28	Task 5643	- RuMaster, added new IRXData functions, that each one is a sub-part of the existing function CaptureIQData.
+								This is to enable faster RX data sampling when doing a large number of RX data samplings. 
+								Each call to the existing function CaptureIQData adds some overhead.
+								- RuMaster, added enum FlowDataMode to prepare for future sampling of raw data. 
+								This might speed up the RX data sampling even more.
+
+=============================================================
+
+R1A77 (ecstws, 2017-06-14) 
+Ericsson.Rcm.Etsw.dll			R1A03	Task 6385	Move Dut-communication logging from log type Rcm --> Dut.
+
+=============================================================
+
+R1A76 (ecsgowa, 2017-06-8) 
+CYA1030546_1-Ericsson.Rcm.TypeLibrary		R1A27	Task 4866	Changed Interfaces and DefaultImplementation for PSU and DMM. Removed unused methods.
+CYA1030567_1-Ericsson.Rcm.AcPsu.Keysight68xx	R1A05	Task 4867	Updated to support new interface names in TypeLibrary. Removed unused methods.
+CYA1030573_1-Ericsson.Rcm.Psu.Keysight57xx	R1A03	Task 4870	Updated to support new interface names in TypeLibrary. Removed unused methods.
+CYA1030556_1-Ericsson.Rcm.Psu.Keysight66xx	R1A04	Task 4876	Updated to support new interface names in TypeLibrary. Removed unused methods.
+CYA1030551_1-Ericsson.Rcm.Dmm.Keysight34970A	R1A05	Task 4871	Updated to support new interface names in TypeLibrary. Removed unused methods.
+CYA1030552_1-Ericsson.Rcm.Dmm.Keysight344xx	R1A03	Task 4872	Updated to support new interface names in TypeLibrary. Removed unused methods.
+CYA1030585_1-Ericsson.Rcm.Psu.KeysightN69xx	R1A02	Task 4812	Added new driver for Keysight N6973A
+CXP 904 0665/2 (Air5121 ConfigStore)		R1A21	Task 4866	IviConfigurationStore.xml: Updated to support new and changed drivers, changed Static -> DC in LogicalNames			
+
+NOTE!!! This Driver Package needs "CXP9040612_1-5G_Radio_Resource" R1A262 or later due to new InstrumentHelper(R1A64).
+
+
+=============================================================
+
+R1A75 (ecslnil, 2017-06-1) 
+CXP 904 0665/2 (Air5121 ConfigStore)	R1A20	Task 5615	LTN2142267.json, corrected K6 setting for paths ANT5_0_VSA and ANT5_90_VSA.
+								IviConfigurationStore.xml, unchecked Cache for driver session NetworkAnalysisKeysightPna.
+
+=============================================================
+
+R1A74 (ecslard, 2017-06-1) 
+Ericsson.Rcm.PowerDistribution		R1A01		Added to data packet again.
+
+=============================================================
+
+R1A73 (ecslard, 2017-06-1) 
+Ericsson.Rcm.PowerDistribution.dll	R1A01		Added to data packet
+
+=============================================================
+
+R1A72 (emwfreg, 2017-06-1) 
+
+CYA1030546_1-Ericsson.Rcm.TypeLibrary	R1A26	Task 5600	TemperatureChamberBase, Add new class TemperatureChamberConstants for new way of writing constants.
+
+=============================================================
+
+R1A71 (ecslard, 2017-06-1) 
+Ericsson.Rcm.TypeLibrary   		R1A25			Added IPowerDistribution
+
+=============================================================
+
+R1A70 (ecstill, 2017-05-31) 
+Ericsson.Rcm.Tib			R2A01	Task 947	Replaced a Convert.ToBoolean with a if/else statement
+
+=============================================================
+
+R1A69 (ecslnil, 2017-05-31) 
+Ericsson.Rcm.NA.KeysightPna.dll		R1A02	Task 5022	AcquireNextStandardCore, changed hard-coded timeout from 60 s to 90 s.
+
+=============================================================
+
+R1A68 (ecssass, 2017-05-29) 
+Ericsson.Rcm.Core			R1A07	Task 4243	Changed how to handle compensation path at test start
+Ericsson.Rcm.TypeLibrary		R1A24	Task 4243	Changed how to handle compensation path at test start.
+								Added enum IOName ptcFuseVoltage.
+Ericsson.Rcm.SA.RohdeSchwarz		R1A04	Task 4243	Changed how to handle compensation path at test start
+Ericsson.Rcm.PM.RohdeSchwarzNrpxxS	R1A03	Task 4243	Changed how to handle compensation path at test start
+Ericsson.Rcm.PM.RohdeSchwarzNrpZxx	R1A02	Task 4243	Changed how to handle compensation path at test start
+Ericsson.Rcm.CWSG.RohdeSchwarz		R1A02	Task 4243	Changed how to handle compensation path at test start
+Ericsson.Rcm.SG.RohdeSchwarz		R1A02	Task 4243	Changed how to handle compensation path at test start
+Ericsson.Rcm.SG.KeysightMXG		R1A03	Task 4243	Changed how to handle compensation path at test start
+
+=============================================================
+
+R1A67 (ECSBKKK, 2017-05-17) 
+Ericsson.Rcm.BoardPowerManager.dll	R1A08			Corrected ReceiveBinary(int length).
+								Check if data available in loop, then read until done!
+
+=============================================================
+
+R1A66 (ecsgowa, 2017-05-16) 
+Ericsson.Rcm.ACPsu.Keysight68xx.dll	R1A04			Changed ProtectionDelay to dummyimplementation
+
+=============================================================
+
+R1A65 (ecslard, 2017-05-15) 
+Ericsson.Rcm.Tib2.dll		R1A02		Implmented DcInOK.
+
+=============================================================
+
+R1A64 (ecslard, 2017-05-10) 
+CXP 904 0665/2			R1A18		Updated resourcedescriptor for DutTelnet
+
+=============================================================
+
+R1A63 (ecslard, 2017-05-10) 
+CXP 904 0665/2			R1A17		Added Tib2
+
+=============================================================
+
+R1A62 (ecstws, 2017-05-8) 
+Ericsson.Rcm.SA.RohdeSchwarz.dll	R1A03	Task 4986	FSVA driver needs to be corrected.
+Ericsson.Rcm.TypeLibrary.dll		R1A23	Task 5094	Modulation analyzer ReadIQData change TimeSpan to double.
+
+=============================================================
+
+R1A61 (ecsnstr, 2017-05-8) 
+Air5121 ConfigStore			R1A16	-		Added logical names for Keysight AC68xx. ACPowerGeneration, DCPowerGeneration#2, ACCurrentMeasurementPsu, StaticCurrentMeasurementPsu#2, ACVoltageMeasurementPsu, StaticVoltageMeasurementPsu#2.
+Air5121 ConfigStore			R1A16	-		Corrected IP adress for ArbGeneration#2 to 192.168.0.61.
+
+=============================================================
+
+R1A60 (ecslnil, 2017-05-5) 
+Ericsson.SC.CompensationManager.dll	R1A02	Task 3751	Interfaces to support compensation manager are added.
+
+=============================================================
+
+R1A59 (ecslnil, 2017-05-3) 
+ConfigurationStore AIR5121 (CXP9040665_2)	R1A14		LTN2142267.json
+								- Duplicated all paths adding antenna polarization value for each path.
+								IviConfigurationStore.xml
+								- Added logical name NetworkAnalysis and associated driver session NetworkAnalysisKeysighPna.
+								- Added logical name RFSignalGeneration#3 and driver session for R&S RF CW generator.
+								- Rearranged the mapping between all RFSignalGeneration logical names and their driver sessions.
+								  The order is R&S generator /w arb, MXG/EXG /w arb, R&S CW generator.
+
+=============================================================
+
+R1A58 (ecsnstr, 2017-05-2) 
+CXP 904 0665/2-28GHz_AAS_Unit		R1A13	Task 4907	Update driver packet with latest ConfigStore packet for 28GHz.
+
+=============================================================
+
+R1A57 (ecslnil, 2017-04-28) 
+Ericsson.Rcm.NA.KeysightPna.dll		R1A01	Task 889	First version of instrument driver for Keysight PNA-L network analyzer.
+
+=============================================================
+
+R1A56 (ecshess, 2017-04-27) 
+Ericsson.Rcm.RuMa.dll		R1A04	Task 4810	Location of Tsl.exe has been moved in TCA, R11A01. Driver updated to handle this.
+
+=============================================================
+
+R1A55 (ecsgowa, 2017-04-25) 
+Ericsson.Rcm.Psu.Keysight57xx.dll	R1A01	Task 4748	Added new driver for PSU Keysight N5747A.
+
+=============================================================
+
+R1A54 (ecsgowa, 2017-04-24) 
+Ericsson.Rcm.ACPsu.Keysight68xx.dll	R1A01	Task 3773	Added new driver for PSU Keysight AC6802A/AC6803A.
+Ericsson.Rcm.PM.RohdeSchwarzNrpxxS.dll	R1A02	Task 3680 	Added new driver for Power Sensor NRPxxS
+
+=============================================================
+
+R1A53 (ecstws, 2017-04-20) 
+Ericsson.Rcm.TypeLibrary.dll		R1A22	Task 4767	Update Typelibrary with changes for TIB2
+
+=============================================================
+
+R1A52 (ecsmsnk, 2017-04-20) 
+Ericsson.Rcm.TypeLibrary.dll		R1A21	Task 4767	Update Typelibrary with changes for TIB2
+
+Ericsson.Rcm.Tib2.dll			R1A01	Task 3561	Added new driver for TIB2
+
+
+Ericsson.Rcm.Tib.dll			R1A15	Task 4770	Updated the driver for Tib because of new Tif interface definition. 
+								One paramter to selcted RS485 is added to function SetRS485DirectionCore().
+
+=============================================================
+
+R1A51 (ecstws, 2017-04-19) 
+Ericsson.Rcm.SA.RohdeSchwarz.dll	R1A02	Task 4693	Trace points ranges not valid, frequency calculation isn't correct in fetched trace.
+
+=============================================================
+
+R1A50 (ecsnstr, 2017-04-13) 
+ConfigStore Air5121			R1A12	-		Updated IP adress for DutCommunicationTelnet to 192.168.1.20
+
+=============================================================
+
+R1A49 (ecsnstr, 2017-04-11) 
+ConfigurationStore AIR5121 (CXP9040665_2)	R1A11		-	Updated configuration for RFSwitchPath.
+
+=============================================================
+
+R1A48 (ecsnstr, 2017-04-11) 
+ConfigStore Air5121			R1A10	-		Added missing symlink of switch box configuration file (LTN2142267.json).
+
+=============================================================
+
+R1A47 (ecstill, 2017-04-7) 
+Ericsson.Rcm.Tib.dll 			R1A14	Task 953	Added method SetStateCore
+Ericsson.Rcm.TypeLibrary.dll		R1A19	Task 953	Added enums for IOName, Changed IOName voltage to IOName name
+
+=============================================================
+
+R1A46 (equnjia, 2017-04-5) 
+Ericsson.Rcm.LedAnalyzer.Feasa.dll	R1A03	Task 3908	Led Analyzer Feasa not possible to register to config store
+
+=============================================================
+
+R1A45 (ecsnstr, 2017-04-5) 
+CXP 904 0665/2 28G_AAS ConfigStore	R1A10	-		Added R&S SMW200A and Keysight 34461A to configuration.
+
+=============================================================
+
+R1A44 (equnjia, 2017-04-5) 
+Ericsson.Rcm.TypeLibrary.dll		R1A18	Task		Add SupportedApi() for LedAnalyzerBase
+
+=============================================================
+
+R1A43 (ecsnstr, 2017-04-4) 
+CXP 904 0665/2 ConfigurationStore 28Ghz	R1A09	-		Added LogocalName and config file for temporary RF Switch box.
+
+=============================================================
+
+R1A42 (ecshess, 2017-04-3) 
+Ericsson.Rcm.RuMa.dll			R1A03	Task 2381	Added RuMa dll to the driverpack
+
+=============================================================
+
+R1A41 (ecsjiol, 2017-03-30) 
+Ericsson.Rcm.LedAnalyzer.Feasa.dll	R1A02	Task 817	Updated to latest revision
+
+=============================================================
+
+R1A40 (ecsjiol, 2017-03-29) 
+Ericsson.Rcm.Tib, CYA1030550_1-R1A12
+- Rebuild
+
+=============================================================
+
+R1A39 (ecstws, 2017-03-29) 
+Ericsson.SC.CompensationManager.dll		R1A01	Task 3751	Added to resource.
+Ericsson.Rcm.RfSwitch.KeysightL449xA.dll	R1A02	Task 884	Added to resource.
+Ericsson.Rcm.TypeLibrary.dll			R1A17	Task ####	Added interface for RuMaster, update ITIF, update SwitchPath.
+
+=============================================================
+
+R1A38 (ecsnstr, 2017-03-28) 
+Ericsson.Rcm.SG.KeysightMXG		R1A02	Task 3752	DriverRegistration, update so that it will be possible to use Ericsson.Rcm.RegisterDrivers to register driver to IVI.
+
+=============================================================
+
+R1A37 (ecsnstr, 2017-03-23) 
+CXP 904 0665/2 - ConfigurationStore	R1A07	-		Added RFPowerMeasurement woth HW descriptor ANT_PM.
+
+=============================================================
+
+R1A36 (equnjia, 2017-03-23) 
+IviConfigurationStore.xml		R1A06	-		Added Logicalnames and driver sessions for LedAnalyzer.
+
+=============================================================
+
+R1A35 (equnjia, 2017-03-22) 
+Ericsson.Rcm.LedAnalyzer.Feasa.dll	R1A01	Task 3482	Add the Driver for LedSensor
+IviConfigurationStore.xml		R1A05	-		Added Logicalnames and driver sessions for LedAnalyzer.
+
+=============================================================
+
+R1A34 (equnjia, 2017-03-22) 
+Ericsson.Rcm.TypeLibrary.dll		R1A14	Task 3555 	Set interface for LEDAnalyzer
+
+=============================================================
+
+R1A33 (ecslnil, 2017-03-16) 
+Ericsson.Rcm.TypeLibrary.dll		R1A13	Task 2392	Added interfaces for INetworkAnalysis
+
+=============================================================
+
+R1A32 (ecstws, 2017-03-16) 
+Ericsson.Rcm.Core.dll			R1A05	Task ####	Updated
+Ericsson.Rcm.TypeLibrary.dll		R1A12	Task ####	Updated
+Ericsson.Rcm.SG.RohdeSchwarz.dll	R1A01	Task ####	Added to package
+Ericsson.Rcm.CWSG.RohdeSchwarz.dll	R1A01	Task ####	Added to package
+Ericsson.Rcm.PM.RohdeSchwarzNrpZxx.dll	R1A01	Task ####	Added to package
+Ericsson.Rcm.SA.RohdeSchwarz.dll	R1A01	Task ####	Added to package
+Ericsson.Rcm.Dmm.Keysight344xx.dll	R1A01	Task ####	Added to package
+
+=============================================================
+
+R1A31 (ecsmsnk, 2017-03-9) 
+Ericsson.Rcm.Cnt.Keysight532xx.dll	R1A03			Send command "ABOR;INIT;*OPC?" every time before command "FETC?".
+
+=============================================================
+
+R1A30 (ecsbkkk, 2017-03-6) 
+Ericsson.Rcm.Tib.dll			R1A11			Added command in SetDirectionCore
+
+=============================================================
+
+R1A29 (ecslnil, 2017-03-2) 
+CXP 904 0665/2				R1A02	Task 194	Config Store package CXP 904 0665/2 R1A02 included in package.
+
+=============================================================
+
+R1A28 (ecsmsnk, 2017-02-28) 
+Ericsson.Rcm.Tib.dll			R1A10			Added reset ScanBridge in function ResetDeviceCore()
+
+=============================================================
+
+R1A27 (ecsbkkk, 2017-02-23) 
+Ericsson.Rcm.Tib.dll			R1A09			Added case MAIN_PTC_MVD and MAIN_TSP_MVD in SelectJtagPathCore.
+
+=============================================================
+
+R1A26 (ecsbkkk, 2017-02-23) 
+Ericsson.Rcm.TypeLibrary.dll		R1A09			Added values to enum JtagPath
+
+=============================================================
+
+R1A25 (ecsbkkk, 2017-02-23) 
+Ericsson.Rcm.TypeLibrary.dll		R1A08			Added ActivateAdcVoltage in Psb interface.
+								Corrected property Io.
+								Added ITif to TifBase.
+
+Ericsson.Rcm.Tib.dll			R1A08			Added implementation of ActivateAdcVoltageCore.
+								Corrected set of io acdcInOk in AcInOkCore and DcInOkCore.
+
+=============================================================
+
+R1A24 (ecsmsnk, 2017-02-17) 
+Ericsson.Rcm.TypeLibrary.dll		R1A07	Updated interface for Tif driver.
+Ericsson.Rcm.Tib.dll			R1A07	Updated interface for Tif driver.
+
+=============================================================
+
+R1A23 (ECSBKKK, 2017-02-15) 
+Ericsson.Rcm.BoardPowerManager.dll	R1A07			Updated after Ericsson.SC.TypeLibrary naming review
+
+=============================================================
+
+R1A22 (ecsnstr, 2017-02-15) 
+Ericsson.Rcm.Tib			R1A06	-		Updated with new logger Interface.
+
+=============================================================
+
+R1A21 (ecsnstr, 2017-02-6) 
+Ericsson.Rcm.Core			R1A04	-		Updated after Ericsson.SC.TypeLibrary naming review.
+Ericsson.Rcm.Etsw			R1A02	-		Updated after Ericsson.SC.TypeLibrary naming review.
+
+=============================================================
+
+R1A20 (ecsbkkk, 2017-02-1) 
+Ericsson.Rcm.Etsw.dll			R1A01	Task 		Add driver to datapacket
+
+=============================================================
+
+R1A19 (ecsnstr, 2017-01-31) 
+Ericsson.Rcm.Sg.KeysightMXG		R1A01	-		Added Driver for SG MXG and EXG.
+
+=============================================================
+
+R1A18 (ECSMSNK, 2017-01-30) 
+Ericsson.Rcm.Tib 			R1A05			Set Debug signals high as default.
+
+=============================================================
+
+R1A17 (ecsmsnk, 2017-01-30) 
+Ericsson.Rcm.Tib 			R1A04			Included latest version
+Ericsson.Rcm.Dmm.Keysight34970A 	R1A03
+
+
+=============================================================
+
+R1A16 (ecsbkkk, 2017-01-24) 
+Ericsson.Rcm.BoardPowerManager.dll	R1A06	Task 2344	Update BoardPowerManager driver - stability
+
+=============================================================
+
+R1A15 (ecsmsnk, 2017-01-23) 
+Ericsson.Rcm.Tib.dll				R1A02			Added support to change BScan path on the Tib.
+
+=============================================================
+
+R1A14 (ecsbkkk, 2017-01-12) 
+Ericsson.Rcm.BoardPowerManager.dll	R1A05	Task 1718	Fix bug in programming of DcDc converters
+
+=============================================================
+
+R1A13 (ecsnstr, 2017-01-12) 
+Ericsson.Rcm.Cnt.Keysight532xx		R1A02	-		Uppdated according to updates in Ericsson.Rcm.Core R1A03.
+
+=============================================================
+
+R1A12 (ecslnil, 2017-01-12) 
+Updated to new version to be able to store it as a data packet and not a resource.
+Same content as R1A11.
+
+=============================================================
+
+R1A11 (ecsmsnk, 2017-01-4) 
+Ericsson.Rcm.Tib.dll				R1A01			Added driver for TIB.
+
+=============================================================
+
+R1A10 (ecsbkkk, 2016-12-23) 
+Ericsson.Rcm.BoardPowerManager.dll	R1A04			Bug fixes in ConverterId functions. Mixed up transaction type.
+
+=============================================================
+
+R1A09 (ecsnstr, 2016-12-22) 
+Ericsson.Rcm.Cnt.Keysight532xx		R1A01	Task 885	Added driver to datapacket.
+
+=============================================================
+
+R1A08 (ECSBKKK, 2016-12-22) 
+Ericsson.Rcm.TypeLibrary.dll		R1A06			Added property ConverterId to interface IPwmControl and IPrimaryPwmControl.
+
+=============================================================
+
+R1A07 (ECSBKKK, 2016-12-21) 
+Ericsson.Rcm.TypeLibrary.dll		R1A05			Added new interface functions ConverterId in BoardPowerManager
+Ericsson.Rcm.BoardPowerManager.dll	R1A03			Added implementation of interface functions ConverterId
+
+=============================================================
+
+R1A06 (ecsnstr, 2016-12-19) 
+Ericsson.Rcm.TypeLibrary		R1A04	-		Added interfaces, IDutCommunication and ISerialDutCommunication.
+
+=============================================================
+
+R1A05 (ecsbkkk, 2016-12-19) 
+Ericsson.Rcm.BoardPowerManager.dll	R1A02			Added new driver.
+
+=============================================================
+
+R1A04 (ecstws, 2016-12-16) 
+Ericsson.Rcm.Psu.Keysight66xx.dll	R1A01			Added.
+Ericsson.Rcm.Dmm.Keysight34970A.dll	R1A01			Added.
+
+=============================================================
+
+R1A03 (ecstws, 2016-12-16) 
+Ericsson.Rcm.Core.dll			R1A02			Added.
+Ericsson.Rcm.IviConfigServer.dll	R1A01			Added.
+Ericsson.Rcm.TypeLibrary.dll		R1A03			Added.
+
+=============================================================
+
+R1A02 (ecstws, 2016-12-16) 
+Ericsson.Rcm.Core.dll			R1A02			Added.
+Ericsson.Rcm.IviConfigServer.dll	R1A01			Added.
+Ericsson.Rcm.TypeLibrary.dll		R1A03			Added.
+
+=============================================================
+
+R1A01 (ecstws, 2016-12-16) 
+Ericsson.Rcm.Core.dll			R1A02			Added.
+Ericsson.Rcm.IviConfigServer.dll	R1A01			Added.
+Ericsson.Rcm.TypeLibrary.dll		R1A03			Added.
+
+=============================================================
+
