@@ -8,12 +8,13 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Drivers_5G_Radio</RootNamespace>
     <AssemblyName>Drivers_5G_Radio</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -49,7 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="109 21-CXP 904 0674_1.txt" />
+    <Content Include="109 21-CXP 999 9999_9.txt" />
     <Content Include="TestFileVersion.txt" />
   </ItemGroup>
   <ItemGroup>
