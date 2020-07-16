@@ -1,0 +1,12 @@
+[Version]
+
+ProductName=CXP 999 9999/9
+
+ProductVersion=R1A
+
+Description=Test Resource
+
+Add one line for fea1
+Add one line for fea2
+Add one line for fea3
+Add one line for fea4

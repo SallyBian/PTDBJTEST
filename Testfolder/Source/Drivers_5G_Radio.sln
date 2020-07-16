@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drivers_5G_Radio", "Drivers_5G_Radio.csproj", "{136C60E8-0432-4387-993F-E7D6527344C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{136C60E8-0432-4387-993F-E7D6527344C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136C60E8-0432-4387-993F-E7D6527344C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136C60E8-0432-4387-993F-E7D6527344C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136C60E8-0432-4387-993F-E7D6527344C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F197A928-437D-4B44-8792-9C2C99CED41C}
+	EndGlobalSection
+EndGlobal
